@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+</head>
+<div style="height: 100%; background: white; width: 100%">
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="{% static 'polls/img/github-logo-thin.svg' %}" ; width="60" , height="60px"/>
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="/about">О нас</a></li>
+                <li><a href="/contacts">Контакты</a></li>
+                <li><a href="/hobbies">Увлечения</a></li>
+                <li><a href="/gallery">Галерея</a></li>
+            </ul>
+        </div>
+        <div class="tell">
+            <a href="tell: 89689319681">+7(968)931-96-81</a>
+        </div>
+    </header>
+    <body class="content">
+
+    </body>
+    <footer>
+
+    </footer>
+</html>
+<style>
+    header {
+        background-color: white;
+    }
+
+    body.content {
+        background-color: #efeeee;
+        height: 100%;
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .menu {
+        flex-grow: 1;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .menu li {
+        margin-right: 20px;
+    }
+
+    .menu li: last-child {
+        margin-right: 0;
+    }
+
+    .menu a {
+        padding 8px 10px;
+    }
+
+    .logo {
+        margin-right: 30px;
+    }
+
+    .menu a,
+    .menu .active {
+        display: block;
+        padding: 8px 10px;
+    }
+
+    .menu .active {
+        color: #fff;
+        background-color: #ff3d00;
+        border-radius: 8px;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-flow: row nowrap;
+        margin 0;
+        padding: 0;
+        front-size: 16px;
+        line-height: 18px;
+        list-style: none;
+    }
+
+    .menu a,
+    .menu .active {
+        display: block;
+        padding: 8px 10px;
+        text-transform: uppercase;
+        letter-spacing: .27em;
+    }
+
+    .menu a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .tell {
+        front-size: 20px;
+        line-height: 24px;
+    }
+
+    .tell a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    <
+    /
+    style >
+
